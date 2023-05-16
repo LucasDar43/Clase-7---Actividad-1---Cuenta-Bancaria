@@ -18,6 +18,14 @@ namespace Clase_7___Actividad_1___Cuenta_Bancaria
 
         public Miembros()
         {
+
+            NumeroCuenta = 0;
+            Apellido = "";
+            Nombre = "";
+            Direccion = "";
+            FechaNac = "";
+            Saldo = 0.0;
+
         }
 
         public Miembros(long numeroCuenta, string apellido, string nombre, string direccion, string fechaNac, double saldo)
@@ -68,6 +76,21 @@ namespace Clase_7___Actividad_1___Cuenta_Bancaria
         public String GetFechaNac()
         {
             return FechaNac;
+        }
+
+        public void SetNumeroCuenta(long NumeroCuenta)
+        {
+            this.NumeroCuenta = NumeroCuenta;
+        }
+
+        public long GetNumeroCuenta()
+        {
+            return NumeroCuenta;
+        }
+
+        public void SetSaldo(double Saldo)
+        {
+            this.Saldo = Saldo;
         }
 
         public double GetSaldo()
